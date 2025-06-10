@@ -14,7 +14,7 @@ const SectionTwo = () => {
   return (
     <>
         
-      <div className="sectionTwo bg-gray-900 text-white px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[9rem] 2xl:px-[12rem] py-[1rem] md:py-[3rem] flex flex-col md:flex-row md:gap-[2rem] 2xl:gap-0 items-baseline 2xl:items-center justify-evenly">
+      <div className="sectionTwo  text-white px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[9rem] 2xl:px-[12rem] py-[1rem] md:py-[3rem] flex flex-col md:flex-row md:gap-[2rem] 2xl:gap-0 items-baseline 2xl:items-center justify-evenly">
         <hr className="text-gray-800 border-[0.1rem] w-full md:hidden " />
         <div className="partOne p-4 md:py-0 md:w-1/2 2xl:w-1/3   ">
           <div className="mininav capitalize flex justify-center md:justify-items-stretch items-center  gap-[2rem] md:gap-0 uppercase text-xs md:text-base xl:text-lg  text-zinc-400 font-medium">

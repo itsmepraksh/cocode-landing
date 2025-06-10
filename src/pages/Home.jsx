@@ -1,3 +1,4 @@
+import SectionFour from "../sections/SectionFour"
 import SectionOne from "../sections/SectionOne"
 import SectionThree from "../sections/SectionThree"
 import SectionTwo from "../sections/SectionTwo"
@@ -9,6 +10,7 @@ const Home = () => {
         <SectionOne/>
         <SectionTwo/>
         <SectionThree/>
+        <SectionFour/>
     </>
   )
 }
