@@ -2,6 +2,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isHidden, setisHidden] = useState(true);
@@ -27,13 +28,22 @@ const Navbar = () => {
           cocode
         </h2>
         <div className="navbar flex justify-evenly items-center gap-[2rem] ">
-          <a className="hidden md:inline  p-2 px-4  text-2xl xl:text-3xl">
-            Features
-          </a>
-          <a className="hidden md:inline bg-gray-700 p-2 px-4 rounded-lg text-xl lg:text-2xl xl:text-3xl lg:bg-transparent">
+          <Link to="/home" className="hidden lg:inline  p-2 px-4  lg:text-xl xl:text-2xl">
+            Home
+          </Link>
+          <Link to="/codespace" className="hidden lg:inline  p-2 px-4  lg:text-xl xl:text-2xl">
+            Codespace
+          </Link>
+          <Link to="/about" className="hidden lg:inline  p-2 px-4  lg:text-xl xl:text-2xl">
+            About
+          </Link>
+          <Link to="/login" className="hidden lg:inline  p-2 px-4  lg:text-xl xl:text-2xl">
+            Login
+          </Link>
+          <Link to="/signup" className="hidden lg:inline bg-gray-700 p-2 px-4 rounded-lg text-xl lg:text-2xl xl:text-2xl lg:bg-transparent">
             Sign Up
-          </a>
-          <p className="md:hidden" onClick={toggleMenu}>
+          </Link>
+          <p className="lg:hidden md:text-2xl" onClick={toggleMenu}>
             <FontAwesomeIcon icon={faBars} />
           </p>
         </div>
@@ -46,25 +56,25 @@ const Navbar = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-              className={`navbar2 absolute w-[75%] top-[95%] rounded aspect-[1/1] bg-gray-800 p-4 flex flex-col gap-4 md:hidden `}
+              className={`navbar2 absolute w-[75%] top-[95%] rounded aspect-[1/1] md:aspect-[2/1] bg-gray-800 p-4 md:p-10 flex flex-col gap-4 lg:hidden `}
             >
-              <h3 className="text-2xl font-medium ">Menu</h3>
-              <ul className="px-3 flex flex-col gap-2 text-sm text-zinc-400 capitalize">
-                <a className="hover:bg-blue-500 active:scale-[0.9] p-1">
-                  Features
-                </a>
-                <a className="hover:bg-blue-500 active:scale-[0.9] p-1">
+              <h3 className="text-2xl md:text-3xl font-medium ">Menu</h3>
+              <ul className="px-3 flex flex-col gap-2 text-sm md:text-2xl text-zinc-400 capitalize">
+                <Link to="/" className="hover:bg-blue-500 active:scale-[0.9] p-1">
+                  home
+                </Link>
+                <Link to="/codespace" className="hover:bg-blue-500 active:scale-[0.9] p-1">
                   codespace
-                </a>
-                <a className="hover:bg-blue-500 active:scale-[0.9] p-1">
+                </Link>
+                <Link to="/about" className="hover:bg-blue-500 active:scale-[0.9] p-1">
                   about
-                </a>
-                <a className="hover:bg-blue-500 active:scale-[0.9] p-1">
+                </Link>
+                <Link to="/login" className="hover:bg-blue-500 active:scale-[0.9] p-1">
                   LogIn
-                </a>
-                <a className="hover:bg-blue-500 active:scale-[0.9] p-1">
+                </Link>
+                <Link to="/signup" className="hover:bg-blue-500 active:scale-[0.9] p-1">
                   SignUp
-                </a>
+                </Link>
               </ul>
             </motion.div>
           )}
