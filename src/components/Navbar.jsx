@@ -28,7 +28,7 @@ const Navbar = () => {
           cocode
         </h2>
         <div className="navbar flex justify-evenly items-center gap-[2rem] ">
-          <Link to="/home" className="hidden lg:inline  p-2 px-4  lg:text-xl xl:text-2xl">
+          <Link to="/" className="hidden lg:inline  p-2 px-4  lg:text-xl xl:text-2xl">
             Home
           </Link>
           <Link to="/codespace" className="hidden lg:inline  p-2 px-4  lg:text-xl xl:text-2xl">

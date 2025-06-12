@@ -13,7 +13,7 @@ const App = () => {
       {/* px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[9rem] 2xl:px-[12rem] py-[1rem] md:py-[3rem] */}
       <Navbar />
       <Mainroutes/>
-      <Home />
+      {/* <Home /> */}
      <Footer/>
     </>
   );
