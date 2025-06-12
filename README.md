@@ -53,13 +53,6 @@ npm install
 npm run dev
 ````
 
----
-
-## 📷 Screenshot
-
-![Screenshot](./assets/screenshot.png) <!-- Replace with actual screenshot path if available -->
-
----
 
 ## 🌐 Live Demo
 
